@@ -1,0 +1,87 @@
+﻿body {
+    background-color: white;
+    margin: auto 0;
+    text-align: center;
+}
+
+.heading-main {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10%;
+    font-weight: 700;
+    letter-spacing: 12px;
+    text-align: center;
+    /*animation-name: slideInLeft;
+    animation-duration: 2s;*/
+}
+
+heading-sub {
+    display: block;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-align: center;
+    /*animation-name: slideInRight;
+    animation-duration: 2s;*/
+}
+
+@media (min-width: 450px) and (min-height: 300px) {
+    .heading-main {
+        display: block;
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 18px;
+        text-align: center;
+        animation-name: slideInLeft;
+        animation-duration: 4s;
+    }
+
+    .heading-sub {
+        display: block;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 16px;
+        text-align: center;
+        animation-name: slideInRight;
+        animation-duration: 4s;
+    }
+}
+
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    animation-name: slideInButton;
+    animation-duration: 2s;
+    position: relative;
+}
+
+.btn-animated {
+    animation: slideInButton .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.btn-selection {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+    /*.btn-white::after {
+        background-color: #ffffff;
+    }
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}*/
