@@ -1,0 +1,7 @@
+﻿blockquote > p::before {
+    content: '"';
+}
+
+blockquote > p::after {
+    content: '"';
+}

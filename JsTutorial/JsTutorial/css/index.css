@@ -1,18 +1,26 @@
 ﻿body {
-    background-color: white;
+    /*background-color: white;*/
     margin: auto 0;
     text-align: center;
+    color: #333;
+    background: #e8ecf0 url(i/denim2.png) no-repeat 50% 350px;
+}
+#ul-header li {
+    display: inline;
+    padding:10px 30px;
+    font-size:20px;
 }
 
 .heading-main {
     display: block;
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 10%;
     font-weight: 700;
     letter-spacing: 12px;
     text-align: center;
-    /*animation-name: slideInLeft;
-    animation-duration: 2s;*/
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    line-height:250%;
 }
 
 heading-sub {
@@ -47,6 +55,7 @@ heading-sub {
     }
 }
 
+/*black round box penguiny*/
 .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -58,15 +67,45 @@ heading-sub {
     position: relative;
 }
 
+.course-selection {
+
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10%;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-align: left;
+}
+
+    /*which font datalist better?*/
+.course-selection {
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+.course-selection li {
+        line-height: 150%
+}
+
+a {
+    text-decoration: none
+}
+
 .btn-animated {
     animation: slideInButton .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
-
 .btn-selection {
     background-color: black;
     color: white;
     padding: 10px 30px;
+}
+
+li {
+    list-style: none;
 }
 
     /*.btn-white::after {
@@ -84,4 +123,23 @@ heading-sub {
     left: 0;
     z-index: -1;
     transition: all .4s;
+}*/
+
+
+/*aside {
+    width: 20%;   
+}*/
+
+
+
+
+/*@media only screen and (min-width: 1132px) .course-selection {
+    position: absolute;
+    top: 360px;
+    right: 0;
+    width: 33.3%;
+    padding: 0 0 20px 0;
+    margin: 0;
+    overflow: visible;
+    background: transparent;
 }*/
