@@ -4,12 +4,15 @@
     text-align: center;
     color: #333;
     background: #e8ecf0 url(i/denim2.png) no-repeat 50% 350px;
+    border:1px solid black;
+    margin:10px;
 }
 #ul-header li {
     display: inline;
     padding:10px 30px;
     font-size:20px;
 }
+
 li {
     list-style: none;
 }
@@ -106,7 +109,21 @@ a {
     padding: 10px 30px;
 }
 
+#ul-navigation li {
+    padding: 15px 0px 20px 30px;
+    width: 500px;
+    margin-left: 200px;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("./../images/banner1.jpg");
+    background-repeat: repeat-x;
+    /*border:*/
+}
 
+footer{
+    background-color:black;
+    padding-bottom:100px;
+}
 
     /*.btn-white::after {
         background-color: #ffffff;

@@ -48,6 +48,10 @@ section .section1 {
     padding: 10px 30px;
     font-size: 20px;
 }
+a {
+    
+    text-decoration: none;
+}
 li {
     list-style: none;
 }
