@@ -10,7 +10,9 @@
     padding:10px 30px;
     font-size:20px;
 }
-
+li {
+    list-style: none;
+}
 .heading-main {
     display: block;
     font-size: 22px;
@@ -104,9 +106,7 @@ a {
     padding: 10px 30px;
 }
 
-li {
-    list-style: none;
-}
+
 
     /*.btn-white::after {
         background-color: #ffffff;
