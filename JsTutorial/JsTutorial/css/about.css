@@ -27,7 +27,7 @@ section .section1 {
 }
 .box {
     display: inline-block;
-    /*background: #9BCD15;*/
+    background: #9BCD15;
     /*background: #DFF99A;*/
     width: 600px;
     height: 80px;
