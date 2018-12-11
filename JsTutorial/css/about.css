@@ -1,0 +1,68 @@
+﻿blockquote > p::before {
+    content: '"';
+}
+
+blockquote > p::after {
+    content: '"';
+}
+body {
+    /*background-color: white;*/
+    margin: auto 0;
+    text-align: center;
+    color: #333;
+    background: #e8ecf0 url(i/denim2.png) no-repeat 50% 350px;
+}
+section .section1 {
+    text-align: left;
+}
+/*section .section2 {
+    text-align: right;
+}*/
+.trigger {
+    width: 400px;
+    height: 80px;
+    border:10px solid #999;
+    background:#ddd;
+    /*color:aliceblue;*/
+}
+.box {
+    display: inline-block;
+    background: #9BCD15;
+    /*background: #DFF99A;*/
+    width: 600px;
+    height: 80px;
+    transition: transform 300ms ease-in-out;
+    
+    /*transition: transform 300ms cubic-bezier(0,0.47,0.32,1.97);*/
+    pointer-events: none;
+    text-align: center;
+    letter-spacing: 10px;
+  
+}
+
+.trigger:hover .box {
+    transform: translate(400px,150px) rotate(360deg) ;
+}
+#ul-header li {
+    display: inline;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+a {
+    
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.heading-main {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10%;
+    font-weight: 700;
+    letter-spacing: 12px;
+    text-align: center;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    line-height: 250%;
+}

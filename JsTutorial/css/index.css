@@ -1,0 +1,251 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    /*background-color: white;*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    background: #fff9cf;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+    /* Left and right column */
+    .column.side {
+        width: 25%;
+    }
+
+    /* Middle column */
+    .column.middle {
+        width: 50%;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+nav {
+
+}
+
+ul {
+    
+}
+
+#header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5a12cc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    #header li a:hover {
+        background-color: #430e99;
+    }
+
+#header li {
+    list-style: none;
+    float: left;
+}
+
+#navigation {
+    list-style-type: none;
+    overflow:hidden;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+#navigation li a{
+    display:block;
+    text-align:left;
+    padding: 8px 16px;
+    width: auto;
+    text-decoration:none;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("./../images/banner1.jpg");
+    background-repeat: repeat-x;
+    /*border:*/
+}
+
+#navigation li a:hover{
+    background-color:rebeccapurple;
+    color:white;
+}
+
+.heading-main {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10%;
+    font-weight: 700;
+    letter-spacing: 12px;
+    text-align: center;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    line-height:250%;
+}
+
+.heading-sub {
+    display: block;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-align: center;
+    /*animation-name: slideInRight;
+    animation-duration: 2s;*/
+}
+
+@media (min-width: 450px) and (min-height: 300px) {
+    .heading-main {
+        display: block;
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 18px;
+        text-align: center;
+        animation-name: slideInLeft;
+        animation-duration: 4s;
+    }
+
+    .heading-sub {
+        display: block;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 16px;
+        text-align: center;
+        animation-name: slideInRight;
+        animation-duration: 4s;
+    }
+}
+
+/*black round box penguiny*/
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    animation-name: slideInButton;
+    animation-duration: 2s;
+    position: relative;
+}
+
+.course-selection {
+
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10%;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-align: left;
+}
+
+    /*which font datalist better?*/
+.course-selection {
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+.course-selection li {
+        line-height: 150%
+}
+
+a {
+    text-decoration: none
+}
+
+.btn-animated {
+    animation: slideInButton .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+.btn-selection {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+
+
+footer {
+    position: bottom;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: rgb(0,0,0);
+    z-index: 100;
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+}
+
+    /*.btn-white::after {
+        background-color: #ffffff;
+    }
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}*/
+
+
+/*aside {
+    width: 20%;   
+}*/
+
+
+
+
+/*@media only screen and (min-width: 1132px) .course-selection {
+    position: absolute;
+    top: 360px;
+    right: 0;
+    width: 33.3%;
+    padding: 0 0 20px 0; 
+    margin: 0;
+    overflow: visible;
+    background: transparent;
+}*/
