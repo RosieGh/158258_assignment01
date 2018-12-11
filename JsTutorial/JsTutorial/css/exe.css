@@ -1,0 +1,54 @@
+﻿* {margin:0;
+   padding:0;
+   border:0;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: nowrap;*/ /*default*/
+    /*justify-content:flex-start;*/ /*default*/ /*space-between*/
+    /*align-items:flex-start;*/
+    /*align-content:space-around; space-between;*/ 
+    height: 100vh; /*100%*/
+    background: #e8ecf0 url(i/denim2.png) no-repeat 50% 350px;
+}
+
+.item {
+    /*flex-grow: 1;*/
+    flex-basis:0;
+    background: rgba(255,0,0,0.5);
+    
+}
+item:nth-child(1) {
+    flex-grow:1;
+}
+
+item:nth-child(2) {
+    flex-grow: 1;
+}
+
+item:nth-child(3) {
+    /*flex-grow: 1;*/
+    flex:1;
+    align-self:flex-start;
+}
+
+item:nth-child(4) {
+    /*flex-grow: 1;*/
+    flex: 1;
+    align-self: center;
+}
+
+item:nth-child(5) {
+    flex: 1;
+    /*flex-grow: 1;*/
+    align-self: flex-end;
+}
+.item:nth-child(odd) {
+    background: rgba(255,255,0,0.5);
+}
