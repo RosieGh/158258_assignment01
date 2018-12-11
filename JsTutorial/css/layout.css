@@ -1,0 +1,15 @@
+﻿body {
+    margin: 0px auto;
+    padding: 0px;
+    width: 900px;
+    /*800px*/
+}
+
+
+nav {
+    float: left;
+    margin-right: 10px;
+    /*width: 150px;*/
+    width: 20%; /*edit 20%*/
+    color: white;
+}
