@@ -1,5 +1,5 @@
 ﻿body{
-    background-color: blanchedalmond;
+    background: url("./../images/extra_clean_paper.png");
 }
 
 a{
@@ -67,6 +67,7 @@ a{
     background-color:grey;
 }
 
+
 header{
     background: url("./../images/header_image.jpg") repeat-x;
     font-size:40px;
@@ -80,7 +81,7 @@ header{
 nav.grid-item{
     background-color:black;
     font-size:30px;
-    text-align:center;
+    text-align:left;
     grid-column-start:6;
     grid-column-end:8;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -97,6 +98,10 @@ nav ul{
 nav ul li{
     display:inline;
     margin-left:25px;
+}
+
+#home{
+   /* margin-right: 800px;  */
 }
 
 
@@ -131,11 +136,11 @@ aside ul li a {
 }
 
 section.grid-item {
-    background-color: aqua;
+    background-color:white;
     grid-row:3/4;
     grid-column: 2/8;
-    padding:100px;
-    text-align: center;
+    padding:80px 100px;
+    text-align: left;
     vertical-align: center;
 
 }
