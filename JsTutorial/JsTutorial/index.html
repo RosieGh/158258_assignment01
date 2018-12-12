@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
 
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/about.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="icon" type="image/png" href="cutePenguine.jpg" />
    
-    <script src=""></script>
     <script src="" type="text/javascript"></script>
 
     <title>JavaScript Tutorials</title>
@@ -17,58 +17,39 @@
 
 
 <body>
-<div class="container">
-
-    <div class="item">
-    <nav>
-        <ul id="header">
-            <li><a href="section.html">Sections</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="course.html">Course</a></li>
-        </ul>
-    </nav>
+<div class="grid-container">
+<header class="grid-item">
+    <div>
+        <h1 class="heading-index">
+            Aunt Penguiny JavaScript
+        </h1>
     </div>
-    <header class="header">
-        <!--<div class="">
-            <i class="penguiny" style="font-size: 4vw; color:white" aria-hidden="true"></i>
-        </div>-->
+</header>
+<nav class="grid-item">
+    <ul>
+        <li id="course"><a href="course.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
 
-        <div>
-            <h1 class="heading-index">
-                Aunt Penguiny JavaScript
-            </h1>
+</nav>
 
-            <!--<a href="section.html" class="btn btn-selection btn-animated">
-                Penguiny
-            </a>-->
-        </div>
-    </header>
-    <div class="row">
-        <div class="column side">
-            <ul id="navigation">
-                <li><a href="variables.html">VARIABLES</a></li>
-                <li><a href="datatypes.html">DATATYPES</a></li>
-                <li><a href="loops.html">LOOPS</a></li>
-                <li><a href="conditions.html">CONDITIONS</a></li>
-                <li><a href="strings.html">STRINGS</a></li>
-                <li><a href="functions.html">FUNCTONS</a></li>
-            </ul>
-        </div>
-        <div class="column middle">
-            <h2>Heading</h2>
-            <p>.</p>
-        </div>
-    </div>
-
-    <section>
-        <aside class="sidebar">
-            <div class="course-selection">
-
-            </div>
-        </aside>
-    </section>
-
-    <footer></footer>
+<aside class="grid-item">
+    <ul>
+        <li><a href="variables.html">VARIABLES</a></li>
+        <li><a href="datatypes.html">DATATYPES</a></li>
+        <li><a href="loops.html">LOOPS</a></li>
+        <li><a href="conditions.html">CONDITIONS</a></li>
+        <li><a href="strings.html">STRINGS</a></li>
+        <li><a href="functions.html">FUNCTONS</a></li>
+    </ul>
+</aside >
+<section class="grid-item">
+    <button class="button">
+       <span>Penguiny</span> 
+    </button>
+</section>
+<footer class="grid-item">
+</footer>
 </div>
 </body>
 </html>

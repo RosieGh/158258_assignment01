@@ -1,109 +1,48 @@
-﻿body {
-    /*background-color: white;
-    margin: auto 0;
-    text-align: center;
-    color: #333;
-    background: #e8ecf0 url(i/denim2.png) no-repeat 50% 350px;
-    
-    border: 1px solid black;
-    margin: 10px;
-   
+﻿body{
+    background-color: blanchedalmond;
 }
 
-.upper navigation {
-    border: 1px solid black;
-    padding: 15px 0px 20px 30px;
-}
-#ul-header li {
-    display: inline;
-    padding: 10px 30px;
-    font-size: 20px;
-}
-
-li {
-    list-style: none;
-}
-.heading-main {
-    display: block;
-    font-size: 22px;
-    margin-bottom: 10%;
-    font-weight: 700;
-    letter-spacing: 12px;
-    text-align: center;
-    animation-name: slideInLeft;
-    animation-duration: 2s;
-    line-height:250%;
-}
-
-heading-sub {
-    display: block;
-    font-size: 8px;
-    font-weight: 400;
-    letter-spacing: 10px;
-    text-align: center;
-    /*animation-name: slideInRight;
-    animation-duration: 2s;*/
-}
-
-@media (min-width: 450px) and (min-height: 300px) {
-    .heading-main {
-        display: block;
-        font-size: 34px;
-        font-weight: 700;
-        letter-spacing: 18px;
-        text-align: center;
-        animation-name: slideInLeft;
-        animation-duration: 4s;
-    }
-
-    .heading-sub {
-        display: block;
-        font-size: 28px;
-        font-weight: 400;
-        letter-spacing: 16px;
-        text-align: center;
-        animation-name: slideInRight;
-        animation-duration: 4s;
-    }
-}
-
-/*black round box penguiny*/
-.btn:link, .btn:visited {
-    text-transform: uppercase;
+a{
     text-decoration: none;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    animation-name: slideInButton;
-    animation-duration: 2s;
-    position: relative;
 }
 
-.course-selection {
-
-    display: block;
-    font-size: 22px;
-    margin-bottom: 10%;
-    font-weight: 700;
-    letter-spacing: 8px;
-    text-align: left;
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 
-    /*which font datalist better?*/
-.course-selection {
-    display: block;
-    margin-bottom: 0.25em;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.2em;
-    font-style: normal;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.course-selection li {
-        line-height: 150%
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-a {
-    text-decoration: none
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .btn-animated {
@@ -116,60 +55,93 @@ a {
     padding: 10px 30px;
 }
 
-#ul-navigation li {
-    padding: 15px 0px 20px 30px;
-    width: 500px;
-    margin-left: 200px;
-    font-size: 22px;
-    font-family: 'Zapf Humanist', serif;
-    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url("./../images/banner2.jpg");*/
-    background-repeat: repeat-x;
-    border:black solid;
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows:auto auto auto;
+    padding: 10px;
+    grid-gap:10px;
+}
+
+.grid-item{
+    background-color:grey;
+}
+
+header{
+    background: url("./../images/header_image.jpg") repeat-x;
+    font-size:40px;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end:8;
+    padding-left:20px;
 }
 
 
-footer {
-    background-image: url("./../images/banner2.jpg");
-   
-    padding-bottom: 300px;
-    background-repeat: no-repeat;
-    /*background-size: cover;
-    background-position: center center;*/
+nav.grid-item{
+    background-color:black;
+    font-size:30px;
+    text-align:center;
+    grid-column-start:6;
+    grid-column-end:8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    margin: 0px;
 }
 
-    /*.btn-white::after {
-        background-color: #ffffff;
-    }
 
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}*/
+nav ul{
+    list-style:none;
+    margin:10px;
+}
+
+nav ul li{
+    display:inline;
+    margin-left:25px;
+}
 
 
-/*aside {
-    width: 20%;   
-}*/
+nav ul li a{
+    color: blue;
+}
 
+aside {
+    background-color: antiquewhite;
+    grid-row: 3 / 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: cursive;
+    font-style:italic;
+    font-size: 15px;
+}
 
+aside ul{
+    list-style: none;
+    display:block;
+}
 
+aside ul li{
+    grid-column:1 / 3;
+    display:block;
+    margin-bottom:15px;
+}
 
-/*@media only screen and (min-width: 1132px) .course-selection {
-    position: absolute;
-    top: 360px;
-    right: 0;
-    width: 33.3%;
-    padding: 0 0 20px 0;
-    margin: 0;
-    overflow: visible;
-    background: transparent;
-}*/*/
+aside ul li a {
+    color:white;
+    text-decoration: none;
+}
+
+section.grid-item {
+    background-color: aqua;
+    grid-row:3/4;
+    grid-column: 2/8;
+    padding:100px;
+    text-align: center;
+    vertical-align: center;
+
+}
+
+footer{
+    background: url("./../images/header_image.jpg") repeat-x;
+    grid-column: 1 / 8;
+    height:100px;
+}
