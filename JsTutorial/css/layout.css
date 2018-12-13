@@ -1,15 +1,121 @@
-﻿body {
-    margin: 0px auto;
-    padding: 0px;
-    width: 900px;
-    /*800px*/
+﻿* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
 
-nav {
-    float: left;
-    margin-right: 10px;
-    /*width: 150px;*/
-    width: 20%; /*edit 20%*/
+/* Style the header */
+header {
+  
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.menu li {
+    float:left;
+}
+
+.menu li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li b {
+    font-weight:bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color:#4caf50;
+}
+
+/* Style the navigation menu */
+nav {
+
+}
+
+.navigation {
+    width: 115px;
+    background: #ccc;
+    padding: 0;
+}
+
+    /* Style the list inside the menu */
+    .navigation ul {
+        list-style-type: none;
+        margin-top: 46px;
+        margin-left: 0;
+        padding: 0;
+        width: 115px;
+        background-color: darkmagenta;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .navigation li a {
+        display: block;
+        color: white;
+        padding: 20% 18%;
+        font-weight:600;
+        text-decoration: none;
+    }
+
+        .navigation li a.active {
+             background-color: gold;
+             color: white;
+        }
+
+        .navigation li a:hover:not(.active) {
+            background-color: magenta;
+            color: white;
+        }
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    margin-top:20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Style the footer */
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other
+@media (max-width: 500px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    } */
 }
