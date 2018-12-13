@@ -1,4 +1,8 @@
 
+p.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:18px;
+}
 
 div.topic {
     margin:20px;
